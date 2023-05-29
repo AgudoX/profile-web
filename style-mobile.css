@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
+
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+:root {
+    --ColorPrincipal: darkred;
+}
+
+header nav {
+    background-color: black;
+
+}
+
+header hr {
+    width: 100%;
+    margin: 0 auto;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding-top: 15px;
+}
+
+header nav ul {
+    min-height: 350px;
+    /* Tamaño del fondo del menu */
+}
+
+header nav ul li {
+
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px;
+    /* margen de los elementos del ul */
+    transition: 1s ease-out;
+    padding-top: 15px;
+}
+
+header nav ul li:hover {
+    font-size: 14px;
+    color: white;
+}
+
+nav img {
+    max-height: 60px;
+    /* Tamaño de el logo */
+    margin: 10px;
+    transition: 1s ease-out;
+
+}
+
+nav img:hover {
+    max-height: 50px;
+    /* Tamaño de el logo */
+    margin: 10px;
+
+
+}
+
+/*  Hasta aquí llega la cabecera */
+div.wrapper {
+    background-image: url(./imagenes/intro-bg.jpg);
+    background-size: cover;
+    height: 750px;
+    filter: saturate(100%);
+    background-position: center;
+}
+
+div.wrapper2 {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 70%;
+    padding-top: 80px;
+}
+
+div .hello {
+    text-transform: uppercase;
+    color: rgb(64, 64, 64);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    opacity: 0.7;
+    font-weight: bolder;
+
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 80px;
+    margin-top: 20px;
+
+
+
+}
+
+div.wrapper .fa-solid {
+    position: fixed;
+    top: 94%;
+    left: 93%;
+    color: white
+}
+
+/* Hasta aquí llega el hello world. */
+
+/* Primera sección */
+
+section.seccion-uno {
+    width: 100%;
+
+}
+
+section .seccion-uno-izq {
+
+    /*     background-image: url(./imagenes/profile-bg.jpg);
+    background-size: cover; */
+    position: relative;
+    height: 800px;
+
+
+}
+
+section .seccion-uno-izq::before {
+    content: "";
+    background-image: url(./imagenes/profile-bg.jpg);
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+section .seccion-uno-der {
+    height: 840px;
+}
+
+
+
+section.seccion-uno h2 {
+    color: var(--ColorPrincipal);
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+section.seccion-uno h4 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+section.seccion-uno .seccion-uno-izq p:first-of-type {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(98, 90, 90);
+    font-weight: bold;
+    line-height: 25px;
+    width: 80%;
+    margin-bottom: 10px;
+    text-align: center;
+
+    font-size: 18px;
+
+}
+
+section.seccion-uno .seccion-uno-izq p {
+    width: 80%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    color: gray;
+    text-align: left;
+    line-height: 24px;
+    padding-top: 15px;
+    padding-left: 10%;
+}
+
+section.seccion-uno .seccion-uno-der h2 {
+    color: var(--ColorPrincipal);
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 95px;
+    padding-left: 10%;
+
+
+}
+
+section.seccion-uno .seccion-uno-der h4 {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 25px;
+    padding-left: 10%;
+    padding-top: 5px;
+}
+
+section.seccion-uno .seccion-uno-der p:first-of-type {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 90%;
+    font-size: 18px;
+    padding-left: 5%;
+}
+
+section.seccion-uno .seccion-uno-der p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    color: gray;
+    padding-left: 20%;
+    width: 70%;
+    font-weight: 500;
+    line-height: 28px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+section.seccion-uno h5 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20%;
+    font-size: 16px;
+    padding-top: 10px;
+
+
+}
+
+i.fa-brand {
+    color: var(--ColorPrincipal);
+    padding-left: 5%;
+    min-width: 30px;
+    font-size: 50px;
+    position: absolute;
+
+}
+
+/* Seccion dos */
+
+section.seccion-dos {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    padding-top: 7%;
+    text-align: center;
+    max-height: 500px;
+}
+
+section.seccion-dos h2 {
+    color: var(--ColorPrincipal);
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+
+section.seccion-dos h4 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+section.seccion-dos p {
+    color: grey;
+    font-size: 14px;
+    font-family: 'Libre Baskerville', serif;
+    width: 80%;
+    padding-left: 10%;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+section.seccion-dos::before {
+    content: "";
+    background-image: url(./imagenes/skills-bg.jpg);
+    background-size: cover;
+    filter: brightness(20%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-position: right;
+}
+
+/* Sección tres */
+
+section div.seccion-tres h2 {
+    color: var(--ColorPrincipal);
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 80px;
+    text-transform: uppercase;
+
+}
+
+section div.seccion-tres {
+    text-align: center;
+}
+
+section div.seccion-tres h4 {
+    color: black;
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif;
+    padding-top: 15px;
+    font-weight: bold;
+
+
+}
+
+section div.seccion-tres p {
+    color: gray;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    font-weight: bold;
+    width: 80%;
+    padding-left: 10%;
+    filter: brightness(60%);
+    padding-top: 10px;
+}
+
+section div.article-tres h2 {
+    color: var(--ColorPrincipal);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 45%;
+}
+
+section div.article-tres small {
+    font-family: 'Montserrat', sans-serif;
+    color: lightslategray;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: -40px;
+}
+
+section div.article-tres p {
+    color: grey;
+    font-size: 14px;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 25px;
+    width: 400px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+
+section div.article-tres h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+section div.article-tres h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-top: 5px;
+
+}
+
+div article.article-tres-izq {
+    width: 40%;
+    padding-left: 15%;
+
+
+}
+
+div article.article-tres-der {
+    width: 60%;
+    padding-bottom: 50px;
+    padding-left: 15%;
+
+
+}
+
+hr {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 30px;
+    color: lightslategray;
+    filter: brightness(150%);
+    height: 0.1px;
+
+}
+
+
+i.fa-briefcase {
+    background-color: var(--ColorPrincipal);
+    border-radius: 50%;
+    color: white;
+    height: 30px;
+    width: 40px;
+    position: relative;
+    right: 28%;
+    top: 20px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+i.fa-graduation-cap {
+    background-color: var(--ColorPrincipal);
+    border-radius: 50%;
+    color: white;
+    height: 27px;
+    width: 40px;
+    position: relative;
+    right: 18%;
+    top: 20px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+/* Seccion cuatro */
+
+section.seccion-cuatro {
+    background-color: rgba(210, 215, 211, 0.5);
+    text-align: center;
+}
+
+
+section.seccion-cuatro h2 {
+    color: var(--ColorPrincipal);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 90px;
+    width: 50%;
+    padding-left: 25%;
+
+
+}
+
+section.seccion-cuatro h4 {
+    color: black;
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 20px;
+    font-weight: bold;
+    width: 90%;
+    padding-left: 5%;
+
+}
+
+section.seccion-cuatro p {
+    color: gray;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    font-weight: bold;
+    padding-bottom: 90px;
+    filter: brightness(60%);
+    width: 90%;
+    padding-left: 5%;
+}
+
+section.seccion-cuatro div.carrusel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    padding-left: 15%;
+    padding-bottom: 140px;
+
+
+}
+
+section.seccion-cuatro div.carrusel img {
+    height: 300px;
+
+
+}
+
+/* Seccion cinco */
+
+section.seccion-cinco {
+    height: 600px;
+    background-color: rgb(16, 15, 15);
+
+
+
+}
+
+section.seccion-cinco div.iconos {
+    color: white;
+    position: relative;
+
+}
+
+section.seccion-cinco div.iconos .uno {
+    position: absolute;
+    top: 60px;
+    left: 49%;
+    font-size: 30px;
+}
+
+section.seccion-cinco div.iconos .dos {
+    position: absolute;
+    top: 195px;
+    left: 49%;
+    font-size: 30px;
+}
+
+
+section.seccion-cinco div.iconos .tres {
+    position: absolute;
+    top: 330px;
+    left: 49%;
+    font-size: 30px;
+}
+
+section.seccion-cinco div.iconos .cuatro {
+    position: absolute;
+    top: 460px;
+    left: 49%;
+    font-size: 30px;
+}
+
+
+section.seccion-cinco table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+section.seccion-cinco tr {
+    display: flex;
+    flex-direction: column;
+}
+
+section.seccion-cinco tbody th {
+    color: white;
+    font-size: 14px;
+    font-weight: 520;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+    text-transform: uppercase;
+    transition: 1s;
+    letter-spacing: 1px;
+
+
+
+
+
+}
+
+section.seccion-cinco tbody th:hover {
+    font-size: 16px;
+    color: lightsalmon;
+}
+
+section.seccion-cinco tbody {
+    display: flex;
+    flex-direction: row;
+}
+
+section.seccion-cinco tbody td {
+    color: var(--ColorPrincipal);
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 55px;
+    padding-top: 30px;
+}
+
+
+
+
+
+/* Sección seis */
+
+section.seccion-seis {
+    position: relative;
+    height: 1450px;
+}
+
+
+section.seccion-seis::before {
+    content: "";
+    background-image: url(./imagenes/profile-bg.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    filter: brightness(50%);
+    background-position: center;
+}
+
+section.seccion-seis h2 {
+    color: var(--ColorPrincipal);
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 120px;
+}
+
+section.seccion-seis h4 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+section.seccion-seis p {
+
+    color: gray;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    font-weight: bold;
+    filter: brightness(60%);
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+section.seccion-seis form.formulario label {
+    font-family: 'Montserrat', sans-serif;
+    color: lightslategray;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+section.seccion-seis form.formulario {
+    width: 80%;
+    height: 300px;
+    padding-top: 40px;
+    margin-left: 10%;
+}
+
+section.seccion-seis form.formulario input[type="submit"] {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+    color: white;
+    margin: 0 auto;
+    background-color: rgb(183, 75, 36);
+    height: 55px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    transition: 1s;
+
+}
+
+section.seccion-seis form.formulario input[type="submit"]:hover {
+    background-color: brown;
+
+
+}
+
+section.seccion-seis form.formulario input {
+    font-family: 'Montserrat', sans-serif;
+    color: lightslategray;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent;
+    margin-top: 20px;
+    height: 40px;
+    width: 500px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 0.2px rgba(116, 110, 110, 0.2);
+}
+
+section.seccion-seis form.formulario input[placeholder="message"] {
+    padding-bottom: 150px;
+
+}
+
+section.seccion-seis table {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    margin-top: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section.seccion-seis table tbody {
+    display: flex;
+    flex-direction: row;
+}
+
+section.seccion-seis tr {
+    display: flex;
+    flex-direction: column;
+}
+
+section.seccion-seis table tbody th {
+    color: white;
+    font-size: 14px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+
+
+
+section.seccion-seis table tbody td {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(88, 91, 95);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 25px;
+    padding-bottom: 18px;
+}
+
+footer {
+    background-color: black;
+    height: 150px;
+
+}
+
+
+footer div.social {
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer div.social a i {
+    color: gray;
+    font-size: 34px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    transition: 1s;
+}
+
+footer div.social a i:hover {
+    color: var(--ColorPrincipal);
+
+}
+
+
+footer small {
+    color: rgba(88, 91, 95, 0.634);
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 36%;
+    font-size: 15px;
+    font-weight: bold;
+
+}
